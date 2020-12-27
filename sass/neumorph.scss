@@ -1,0 +1,105 @@
+// item shadow (10px 10px) 20px <--> group (25px)
+// item shadow (20px 20px) 20px <--> group (40px)
+
+// DEFINE light/shadow using https://neumorphism.io/
+// $neu-color-theme: (
+// 	"primary": (
+// 		shadow: #09c791,
+// 		light: #0dffc5,
+// 	),
+// 	"plum": (
+// 		shadow: #c08bc0,
+// 		light: #fab5faed,
+// 		grad1: #c790c7,
+// 		grad2: #ecabec,
+// 	),
+// );
+
+// @function index-to-key($index) {
+// 	$keys: map-keys($neu-color-theme); // A list of all keys in a $breakpoints map
+
+// 	@return nth($keys, $index);
+// }
+
+// utility
+[class*="neu-"] {
+	cursor: pointer;
+}
+
+.neu {
+	// sizes
+	&-half {
+		padding: 0.5rem;
+		margin: 20px;
+	}
+	&-1 {
+		padding: 1rem;
+		margin: 20px;
+	}
+	&-1half {
+		padding: 1.5rem;
+		margin: 20px;
+	}
+	&-2 {
+		padding: 2rem;
+		margin: 20px;
+	}
+
+	// $neu-color-theme
+	// &-primary {
+	// 	box-shadow: 10px 10px 20px map-get(map-get($neu-color-theme, index-to-key(1)), shadow),
+	// 		-10px -10px 20px map-get(map-get($neu-color-theme, index-to-key(1)), light);
+	// }
+	&-plum {
+		box-shadow: 10px 10px 20px #c08bc0, -10px -10px 20px #fab5faed;
+	}
+	&-plum-btn-c {
+		box-shadow: 10px 10px 20px #c08bc0, -10px -10px 20px #fab5faed;
+		&:active {
+			background-image: linear-gradient(145deg, #c790c7, #ecabec);
+			box-shadow: 10px 10px 20px #c08bc0, -10px -10px 20px #fab5faed;
+		}
+	}
+	&-plum-btn-h {
+		box-shadow: 10px 10px 20px #c08bc0, -10px -10px 20px #fab5faed;
+		&:active {
+			box-shadow: inset 10px 10px 20px #c08bc0, inset -10px -10px 20px #fab5faed;
+		}
+	}
+
+	&-plum-convex {
+		background-image: linear-gradient(145deg, #c790c7, #ecabec);
+		box-shadow: 10px 10px 20px #c08bc0, -10px -10px 20px #fab5faed;
+	}
+	&-plum-convex-btn-h {
+		background-image: linear-gradient(145deg, #c790c7, #ecabec);
+		box-shadow: 10px 10px 20px #c08bc0, -10px -10px 20px #fab5faed;
+		&:active {
+			box-shadow: inset 10px 10px 20px #c08bc0, inset -10px -10px 20px #fab5faed;
+		}
+	}
+
+	&-plum-bump {
+		background-image: linear-gradient(145deg, #ecabec, #c790c7);
+		box-shadow: 10px 10px 20px #c08bc0, -10px -10px 20px #fab5faed;
+	}
+	&-plum-bump-btn-c {
+		background-image: linear-gradient(145deg, #ecabec, #c790c7);
+		box-shadow: 10px 10px 20px #c08bc0, -10px -10px 20px #fab5faed;
+		&:active {
+			background-image: linear-gradient(145deg, #c790c7, #ecabec);
+			box-shadow: 10px 10px 20px #c08bc0, -10px -10px 20px #fab5faed;
+		}
+	}
+	&-plum-bump-btn-h {
+		background-image: linear-gradient(145deg, #ecabec, #c790c7);
+		box-shadow: 10px 10px 20px #c08bc0, -10px -10px 20px #fab5faed;
+		&:active {
+			box-shadow: inset 10px 10px 20px #c08bc0, inset -10px -10px 20px #fab5faed;
+		}
+	}
+
+	&-plum-hollow {
+		box-shadow: inset 10px 10px 20px #c08bc0, inset -10px -10px 20px #fab5faed;
+	}
+}

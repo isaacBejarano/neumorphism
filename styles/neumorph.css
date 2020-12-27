@@ -1,0 +1,62 @@
+[class*="neu-"] {
+  cursor: pointer; }
+
+.neu-half {
+  padding: 0.5rem;
+  margin: 20px; }
+
+.neu-1 {
+  padding: 1rem;
+  margin: 20px; }
+
+.neu-1half {
+  padding: 1.5rem;
+  margin: 20px; }
+
+.neu-2 {
+  padding: 2rem;
+  margin: 20px; }
+
+.neu-plum {
+  box-shadow: 10px 10px 20px #c08bc0, -10px -10px 20px #fab5faed; }
+
+.neu-plum-btn-c {
+  box-shadow: 10px 10px 20px #c08bc0, -10px -10px 20px #fab5faed; }
+  .neu-plum-btn-c:active {
+    background-image: linear-gradient(145deg, #c790c7, #ecabec);
+    box-shadow: 10px 10px 20px #c08bc0, -10px -10px 20px #fab5faed; }
+
+.neu-plum-btn-h {
+  box-shadow: 10px 10px 20px #c08bc0, -10px -10px 20px #fab5faed; }
+  .neu-plum-btn-h:active {
+    box-shadow: inset 10px 10px 20px #c08bc0, inset -10px -10px 20px #fab5faed; }
+
+.neu-plum-convex {
+  background-image: linear-gradient(145deg, #c790c7, #ecabec);
+  box-shadow: 10px 10px 20px #c08bc0, -10px -10px 20px #fab5faed; }
+
+.neu-plum-convex-btn-h {
+  background-image: linear-gradient(145deg, #c790c7, #ecabec);
+  box-shadow: 10px 10px 20px #c08bc0, -10px -10px 20px #fab5faed; }
+  .neu-plum-convex-btn-h:active {
+    box-shadow: inset 10px 10px 20px #c08bc0, inset -10px -10px 20px #fab5faed; }
+
+.neu-plum-bump {
+  background-image: linear-gradient(145deg, #ecabec, #c790c7);
+  box-shadow: 10px 10px 20px #c08bc0, -10px -10px 20px #fab5faed; }
+
+.neu-plum-bump-btn-c {
+  background-image: linear-gradient(145deg, #ecabec, #c790c7);
+  box-shadow: 10px 10px 20px #c08bc0, -10px -10px 20px #fab5faed; }
+  .neu-plum-bump-btn-c:active {
+    background-image: linear-gradient(145deg, #c790c7, #ecabec);
+    box-shadow: 10px 10px 20px #c08bc0, -10px -10px 20px #fab5faed; }
+
+.neu-plum-bump-btn-h {
+  background-image: linear-gradient(145deg, #ecabec, #c790c7);
+  box-shadow: 10px 10px 20px #c08bc0, -10px -10px 20px #fab5faed; }
+  .neu-plum-bump-btn-h:active {
+    box-shadow: inset 10px 10px 20px #c08bc0, inset -10px -10px 20px #fab5faed; }
+
+.neu-plum-hollow {
+  box-shadow: inset 10px 10px 20px #c08bc0, inset -10px -10px 20px #fab5faed; }
